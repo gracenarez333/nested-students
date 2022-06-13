@@ -1,5 +1,3 @@
-import React, {Component} from 'react'
-import logo from './logo.svg';
 import './App.css';
 import Roster from './Roster'
 
@@ -64,14 +62,12 @@ const students = [
   }
 ]
 
-class App extends Component {
-  render() {
-    return(
-      <Roster 
-        students={students}
-      />
-    )
-  }
+const App = () => {
+  return (
+    <Roster
+      students={students}
+    />
+  )
 }
 
 export default App;

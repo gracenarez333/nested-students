@@ -1,14 +1,13 @@
-import React, { Component } from 'react';
 
-class Score extends Component {
-    render() {
-        return(
-            <>
-                <p>Date: {this.props.date}</p>
-                <p>Score: {this.props.score}</p>
-            </>
-        )
-    }
+
+const Score = (props) => {
+    const { date, score } = props
+    return (
+        <>
+            <p>Date: {date}</p>
+            <p>Score: {score}</p>
+        </>
+    )
 }
 
 export default Score
